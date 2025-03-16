@@ -1,4 +1,6 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+@custom-variant light (&:where(:root, .solarized-theme, .vibrant-theme));
 
 @layer base {
   :root {
@@ -8,7 +10,7 @@
     --card-foreground: oklch(0.245 0 0); /* Near black */
     --popover: oklch(1 0 0); /* White */
     --popover-foreground: oklch(0.245 0 0); /* Near black */
-    --primary: oklch(74.59% 0.115 93.5); /* Purple, was HSL 262.1 83.3% 57.8% */
+    --primary: oklch(60.59% 0.115 93.5); /* Purple, was HSL 262.1 83.3% 57.8% */
     --primary-foreground: oklch(
       0.985 0 0
     ); /* Light gray, was HSL 210 20% 98% */
@@ -184,6 +186,30 @@
       opacity: 0;
     }
   }
+}
+
+/* Add this right before your @theme section */
+
+@keyframes orbit {
+  0% {
+    transform: rotate(calc(var(--angle) * 1deg))
+      translateY(calc(var(--radius) * 1px)) rotate(calc(var(--angle) * -1deg));
+  }
+  100% {
+    transform: rotate(calc(var(--angle) * 1deg + 360deg))
+      translateY(calc(var(--radius) * 1px))
+      rotate(calc((var(--angle) * -1deg) - 360deg));
+  }
+}
+
+/* Add a class to apply the animation */
+.animate-orbit {
+  animation: orbit calc(var(--duration, 20) * 1s) linear infinite;
+}
+
+/* For reverse orbit animation */
+.animate-orbit-reverse {
+  animation: orbit calc(var(--duration, 20) * 1s) linear infinite reverse;
 }
 
 @layer base {
