@@ -3,6 +3,7 @@ import { Poppins, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme/theme-provider";
 import { ModeToggle } from "@/components/theme/ToggleBtn";
+import PageTransition from "@/components/PageTreansition";
 
 const spaceGrotesk = Space_Grotesk({
   variable: "--font-space-grotesk",
@@ -37,10 +38,12 @@ export default function RootLayout({
           disableTransitionOnChange
           themes={["light", "dark", "solarized-theme", "vibrant-theme"]}
         >
-          {children}
-          <div className="fixed bottom-8 right-8 z-20 flex flex-row justify-center items-center">
-            <ModeToggle />
-          </div>
+          <PageTransition>
+            {children}
+            <div className="fixed bottom-8 right-8 z-20 flex flex-row justify-center items-center">
+              <ModeToggle />
+            </div>
+          </PageTransition>
         </ThemeProvider>
       </body>
     </html>
