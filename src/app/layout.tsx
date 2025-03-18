@@ -13,14 +13,44 @@ const spaceGrotesk = Space_Grotesk({
 const poppins = Poppins({
   variable: "--font-poppins",
   subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  weight: ["400", "500", "600", "700"], // Only load weights you actually use
+  display: "swap", // Improve performance with font-display: swap
 });
 
 export const metadata: Metadata = {
-  title: "Ashkan Sadeghi",
-  description: "Ashkan Sadeghi's Portfolio",
+  title: "Ashkan Sadeghi | Frontend Developer",
+  description:
+    "Portfolio showcasing web development projects and skills by Ashkan Sadeghi",
+  keywords: [
+    "frontend developer",
+    "web developer",
+    "React",
+    "Next.js",
+    "TypeScript",
+  ],
+  authors: [{ name: "Ashkan Sadeghi" }],
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://ashkan2077.vercel.app/",
+    title: "Ashkan Sadeghi | Frontend Developer",
+    description: "Portfolio showcasing web development projects and skills",
+    images: [
+      {
+        url: "/images/ashkan.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Ashkan Sadeghi Portfolio",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Ashkan Sadeghi | Frontend Developer",
+    description: "Portfolio showcasing web development projects and skills",
+    images: ["/images/ashkan.jpg"],
+  },
 };
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -28,6 +58,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+      </head>
       <body
         className={`${spaceGrotesk.variable}  ${poppins.variable} antialiased min-h-screen`}
       >

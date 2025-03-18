@@ -1,8 +1,8 @@
 import React from "react";
 import Socials from "./Socials";
 import Name from "./Name";
-import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { InteractiveHoverButton } from "@/components/magicui/interactive-hover-button";
 
 const Footer = () => {
   return (
@@ -10,9 +10,7 @@ const Footer = () => {
       <Socials />
       <Link href={"/about"} className="mt-20 z-30">
         <div>
-          <Button className="bg-transparent border border-primary w-44 animate-bounce text-foreground hover:bg-primary hover:text-background">
-            Continue
-          </Button>
+          <InteractiveHoverButton>Continue</InteractiveHoverButton>
         </div>
       </Link>
       <Name />
