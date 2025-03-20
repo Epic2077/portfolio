@@ -16,6 +16,7 @@ export const metadata: Metadata = {
   title: "Ashkan Sadeghi | Frontend Developer",
   description:
     "Portfolio showcasing web development projects and skills by Ashkan Sadeghi",
+
   keywords: [
     "frontend developer",
     "web developer",
