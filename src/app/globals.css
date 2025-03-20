@@ -4,6 +4,7 @@
 
 @layer base {
   :root {
+    --font-sans: var(--font-lato);
     --background: oklch(0.9 0 0); /* White, was HSL 0 0% 100% */
     --foreground: oklch(0.245 0 0); /* Near black, was HSL 224 71.4% 4.1% */
     --card: oklch(1 0 0); /* White */
@@ -44,6 +45,7 @@
   }
 
   .dark {
+    --font-sans: var(--font-lato);
     --background: oklch(17.76% 0 0); /* Near black */
     --foreground: oklch(0.985 0 0); /* Light gray */
     --card: oklch(0.145 0 0); /* Near black */
@@ -52,9 +54,14 @@
     --popover-foreground: oklch(0.985 0 0); /* Light gray */
     --primary: oklch(74.59% 0.115 93.5);
     --primary-foreground: oklch(0.205 0 0); /* Dark gray */
-    --secondary: oklch(0.269 0 0); /* Dark gray */
+    --secondary: oklch(66.98% 0 0); /* Dark gray */
     --secondary-foreground: oklch(0.985 0 0); /* Light gray */
-    --muted: oklch(23.5% 0 0); /* Dark gray */
+    --muted: oklch(0.55 0 0); /* Medium gray */
+    --secondary: oklch(0.6 0 0); /* Slightly lighter dark gray */
+    --accent: oklch(0.45 0 0); /* Slightly lighter dark gray */
+    --border: oklch(0.35 0 0); /* Medium gray */
+    --input: oklch(0.35 0 0); /* Medium gray */
+    --ring: oklch(0.5 0 0); /* Light gray */
     --muted-foreground: oklch(0.708 0 0); /* Mid gray */
     --accent: oklch(0.269 0 0); /* Dark gray */
     --accent-foreground: oklch(0.985 0 0); /* Light gray */
@@ -80,6 +87,7 @@
 
   /* Custom Themes: Converted to OKLCH (approximate values; use a converter for precision) */
   .solarized-theme {
+    --font-sans: var(--font-lato);
     --background: oklch(0.97 0.03 75); /* Light yellow, was HSL 45 100% 95% */
     --foreground: oklch(
       43.46% 0.089 87.06
@@ -111,6 +119,7 @@
   }
 
   .vibrant-theme {
+    --font-sans: var(--font-lato);
     --background: oklch(0.96 0.02 210); /* Light cyan, was HSL 210 100% 96% */
     --foreground: oklch(0.2 0.05 210); /* Dark cyan, was HSL 210 100% 20% */
     --card: oklch(1 0 0); /* White, was HSL 210 100% 100% */

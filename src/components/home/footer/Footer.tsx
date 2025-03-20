@@ -6,7 +6,7 @@ import { InteractiveHoverButton } from "@/components/magicui/interactive-hover-b
 
 const Footer = () => {
   return (
-    <div className="mt-[-55px] pl-6 flex justify-between items-center">
+    <div className="-mt-6 pl-3 flex justify-between items-center">
       <Socials />
       <Link href={"/about"} className="mt-20 z-30">
         <div>

@@ -3,7 +3,7 @@ import React from "react";
 
 const Logo = () => {
   return (
-    <div className="p-3  w-max rounded-2xl">
+    <div className="  w-max rounded-2xl">
       <Image src="/logo/logo.svg" alt="logo" width={45} height={45} />
     </div>
   );
