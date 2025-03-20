@@ -8,8 +8,8 @@ interface AboutLayoutProps {
 const AboutLayout: React.FC<AboutLayoutProps> = ({ children }) => {
   return (
     <div className="min-h-screen ">
-      <section className="px-12">
-        <header className="absolute top-0 left-0 w-full px-12 py-8">
+      <section className="px-0 md:px-12">
+        <header className="md:absolute md:top-0 md:left-0 w-full px-6 md:px-12 py-8">
           <Header />
         </header>
         <main>{children}</main>

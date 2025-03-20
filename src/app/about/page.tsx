@@ -8,7 +8,7 @@ const page = () => {
     <div>
       <section
         id="about"
-        className=" h-screen flex flex-row justify-between items-center px-6"
+        className=" h-lvh flex flex-col md:flex-row md:justify-between items-center px-4 md:px-6 "
       >
         <div className="items-start">
           <BlurFade>
@@ -16,15 +16,15 @@ const page = () => {
           </BlurFade>
         </div>
 
-        <div className="items-end relative">
+        <div className="items-center md:items-end relative mt-4 md:mt-0">
           <BlurFade>
-            <div className="w-[500px] h-[500px] bg-accent rounded-full absolute bottom-0 left-18"></div>
+            <div className="w-[70%] h-[70%] bg-muted dark:bg-accent rounded-full absolute bottom-0 left-15 md:left-18 "></div>
             <Image
               src={"/images/ash-nobackground.png"}
               width={700}
               height={700}
               alt="ash"
-              className="grayscale-75 z-10"
+              className="z-20 grayscale-0 dark:grayscale-75"
             />
           </BlurFade>
         </div>

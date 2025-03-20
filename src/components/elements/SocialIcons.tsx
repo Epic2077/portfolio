@@ -25,7 +25,7 @@ const SocialIcons = () => {
     <>
       {obj.map((item, index) => (
         <div
-          className="p-2 bg-accent border border-secondary rounded-full"
+          className="p-2 bg-muted dark:bg-accent border dark:border-secondary rounded-full"
           key={index}
         >
           <Link href={item.link}>{item.icon}</Link>
