@@ -10,10 +10,10 @@ const Header = () => {
       </Link>
       <div className="flex items-center space-x-8 text-lg  text-primary">
         <Link href="/about">About</Link>
-        <Link href={"/resume"}>Resume</Link>
-        <Link href={"/skills"}>Skills</Link>
-        <Link href={"/projects"}>Projects</Link>
-        <Link href={"/contact"}>Contact</Link>
+        <Link href={"#categories"}>Categories</Link>
+        <Link href={"#skills"}>Skills</Link>
+        <Link href={"#projects"}>Projects</Link>
+        <Link href={"#contact"}>Contact</Link>
       </div>
     </header>
   );

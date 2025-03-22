@@ -1,5 +1,6 @@
 import Introduction from "@/components/about/body/Introduction";
 import { BlurFade } from "@/components/magicui/blur-fade";
+import Cards from "@/components/resume/Cards";
 import Image from "next/image";
 import React from "react";
 
@@ -16,18 +17,22 @@ const page = () => {
           </BlurFade>
         </div>
 
-        <div className="items-center md:items-end relative mt-4 md:mt-0">
+        <div className="items-center md:items-end relative mt-10  md:mt-0">
           <BlurFade>
-            <div className="w-[70%] h-[70%] bg-muted dark:bg-accent rounded-full absolute bottom-0 left-15 md:left-18 "></div>
-            <Image
-              src={"/images/ash-nobackground.png"}
-              width={700}
-              height={700}
-              alt="ash"
-              className="z-20 grayscale-0 dark:grayscale-75"
-            />
+            <div className="w-[75%] h-[75%] bg-muted dark:bg-accent rounded-full mx-auto md:ml-auto ">
+              <Image
+                src={"/images/ash-nobackground.png"}
+                width={700}
+                height={700}
+                alt="ash"
+                className="z-20 grayscale-0 dark:grayscale-75"
+              />
+            </div>
           </BlurFade>
         </div>
+      </section>
+      <section>
+        <Cards />
       </section>
     </div>
   );

@@ -8,7 +8,7 @@ const Bookmark = () => {
         About
       </Link>
       <Link href="#resume">Resume</Link>
-      <Link href="#skills">Skills</Link>
+      <Link href="#categories">Categories</Link>
       <Link href={"#projects"}>Projects</Link>
       <Link href={"#contact"}>Contact</Link>
     </div>
