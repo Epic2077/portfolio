@@ -56,7 +56,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
-      <body className={`${lato.variable} antialiased min-h-screen`}>
+      <body className={`${lato.variable} antialiased min-h-screen `}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
@@ -64,12 +64,10 @@ export default function RootLayout({
           disableTransitionOnChange
           themes={["light", "dark", "solarized-theme", "vibrant-theme"]}
         >
-          <PageTransition>
-            {children}
-            <div className="fixed bottom-8 right-8 z-20 flex flex-row justify-center items-center">
-              <ModeToggle />
-            </div>
-          </PageTransition>
+          <PageTransition>{children}</PageTransition>
+          <div className="fixed bottom-8 right-8 z-20 flex flex-row justify-center items-center">
+            <ModeToggle />
+          </div>
         </ThemeProvider>
       </body>
     </html>

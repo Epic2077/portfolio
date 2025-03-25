@@ -1,8 +1,9 @@
 import Introduction from "@/components/about/body/Introduction";
 import { BlurFade } from "@/components/magicui/blur-fade";
-import Cards from "@/components/resume/Cards";
+import Cards from "@/components/category/Cards";
 import Image from "next/image";
 import React from "react";
+import Resume from "@/components/about/resume/Resume";
 
 const page = () => {
   return (
@@ -33,6 +34,9 @@ const page = () => {
       </section>
       <section>
         <Cards />
+      </section>
+      <section className="md:mt-20">
+        <Resume />
       </section>
     </div>
   );

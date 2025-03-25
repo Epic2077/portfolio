@@ -73,7 +73,7 @@ const Cards = () => {
   return (
     <div className="md:mt-20">
       <h3 className="text-center font-bold text-4xl">Categories</h3>
-      <p className="mt-4 text-center">
+      <p className="mt-4 text-center text-lg text-muted-foreground dark:text-secondary">
         Here are the key skills categorized for your reference:
       </p>
       <div className="w-full mx-auto px-8">
